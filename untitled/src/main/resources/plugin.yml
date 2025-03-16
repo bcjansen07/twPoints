@@ -1,0 +1,25 @@
+name: twPoints
+version: 1.0
+main: com.twoweek.twPoints.twPoints
+description: A plugin to manage player points with a GUI and persistence.
+author: YourName
+api-version: 1.21.4
+commands:
+  points:
+    description: View your current points.
+    usage: /points
+  pointsadmin:
+    description: Open the points admin GUI.
+    usage: /pointsadmin
+    permission: twpoints.admin
+  mcpointshelp:
+    description: Display the help menu.
+    usage: /mcpointshelp
+  reloadpoints:
+    description: Reload the plugin.
+    usage: /reloadpoints
+    permission: twpoints.admin
+permissions:
+  twpoints.admin:
+    description: Allows access to the points admin GUI and reload command.
+    default: op
